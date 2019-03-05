@@ -1,2 +1,10 @@
 **/build/
 **/.gradle/
+**/.idea/
+**/gradle/
+**/out/
+**/gradlew
+**/gradlew.bat
+**/.exercism/
+**/README.md
+**/*.iml
