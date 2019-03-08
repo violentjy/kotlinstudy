@@ -1,4 +1,5 @@
 object HandshakeCalculator {
+    // Signal.values() 이용했다면 이 함수 필요없음!!
     private fun getSignal(index: Int, value: Int): Signal? {
         if (value == 0) return null
 
@@ -10,6 +11,7 @@ object HandshakeCalculator {
         }
     }
 
+    // 비트연산 활용했다면 이 과정도 필요없음!
     private fun getBinary(number: Int): ArrayList<Int> {
         if (number <= 1) return arrayListOf(number)
 
