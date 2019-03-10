@@ -26,6 +26,8 @@ class Triangle(a: Double, b: Double, c:Double) {
         // 음수 처리까지 추가된 버전 2
         require(sides.filter { it <= 0 }.isEmpty()
                 && a + b + c > 2 * (sides.max() ?: 0.0))
+        
+        // 위 a + b + c 모두 sides.sum() 으로 깔끔하게 처리 가능! 갈 길이 멀다....
 
         val sideList = sides.toList()
         Collections.rotate(sideList, 1)
