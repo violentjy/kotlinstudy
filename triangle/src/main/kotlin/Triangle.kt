@@ -6,6 +6,7 @@ class Triangle(a: Double, b: Double, c:Double) {
     var isScalene = false
 
     init {
+        // 와씨 처음부터 array 안 쓰고 set 으로 했으면 완전 간단하게 끝남..
         val sides = doubleArrayOf(a, b, c)
 
         // 헐 require 란 게 있었네 짱이다! 아래는 require 이용한 코드
