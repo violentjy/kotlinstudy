@@ -25,7 +25,7 @@ object HandshakeCalculator {
 
         val signals = reverseBinary
                 .filterIndexed { index, i -> index < 4 }
-                .mapIndexed { index, i -> getSignal( index, i) }
+                .mapIndexed { index, i -> if (i == 0) null else Signal.values()[index] }
                 .filterNotNull()
 
         return if (reverseBinary.size > 4) {
